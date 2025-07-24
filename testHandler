@@ -1,0 +1,8 @@
+public class testHandler {
+    public static void preventInsert(List<Tenant__c> newTenants) {
+        // Your logic here
+        for (Tenant__c t : newTenants) {
+            t.Name = 'Modified by Handler'; // Example logic
+        }
+    }
+}
